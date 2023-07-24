@@ -37,17 +37,14 @@ package step1_02.variable;
 public class VariableEx02 {
 
 	public static void main(String[] args) {
-				
+		
 		//int 10000won = 10000;
-		//int memberAge! = 20; 
+		//int memberAge! = 20;
 		//int double = 10; 
-		//int member age = 20; 
-		//int memberAge = 20; 
+		//int member age = 20;
+		int memberAge = 20;
 		//System.out.println(MemberAge);
 		
-		
-		
-
 	}
 
 }

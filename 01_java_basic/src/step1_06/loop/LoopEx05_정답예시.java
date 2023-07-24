@@ -48,7 +48,6 @@ public class LoopEx05_정답예시 {
 		while (i <= 5) {
 			
 			System.out.print("메뉴 선택 : ");
-
 			int choice = scan.nextInt();
 			
 			if		(choice == 1)  bulgogiBurgerOrderCnt++; 

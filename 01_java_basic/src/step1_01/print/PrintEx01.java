@@ -1,14 +1,27 @@
-package step1_01.print; // 1) 패키지선언문은 '항상' 첫줄에 작성한다. 
+package step1_01.print; // 1)패키지선언문은 '항상' 첫줄에 작성한다.
 
-//  2) 주석(comment) : 설명문을 작성하기 위한 방법으로 프로그램의 실행에 영향을 미치지 않는다.
+// 2) 주석(comment) : 설명문을 작성하기 위한 방법으로 프로그램의 실행에 영향을 미치지 않는다.
 
-//  2-1) 라인(line)주석 : 한줄 주석 
+// 2-1) 라인(line)주석 : 한줄주석
+
+/*
+ * 2-2) 블록(block)주석 : 여러줄 주석
+ * 
+ * ~~~~
+ * ~~~~
+ * 
+ * */
 
 /*
  * 
- *  2-2) 블록(block)주석 : 여러줄 주석 
+ * 2-2) 블록(block) 주석 : 여러줄 주석
  * 
+ * 000책임이 000부장의 지시를 받아서
+ * ~~~~~코드를 ~~~~게 수정하였음
  * 
+ * */
+
+/*
  *  3) 에디터 화면 확대 및 축소 : ctrl + [+] , ctrl + [-]
  *  
  *  
@@ -37,23 +50,22 @@ package step1_01.print; // 1) 패키지선언문은 '항상' 첫줄에 작성한
  * */
 
 
+
+
 public class PrintEx01 {
 
-	
-	//main함수의 {}안에서 프로그래밍을 한다.
+	// main함수의 {}안에서 프로그래밍을 한다.
 	public static void main(String[] args) {
 		
-		//tab으로 들여쓰기한 이후에 코드를 작성한다.
+		// tab으로 들여쓰기한 이후에 코드를 작성한다.
 		
-		//System.out.println(데이터); 1) 데이터를 화면에 출력한다. 2) 줄을 바꾼다.(개행, new line)
-		System.out.println("===========");
-		System.out.println(" 메뉴 선택 ");
-		System.out.println("===========");
-	
-		//출력데이터가 없으면 줄바꿈기능만 적용하여 줄을 바꾼다.
+		//System.out.println(데이터); 1) 데이터를 화면에 출력한다. 2) 줄을 바꾼다.(개행,new line)
+		System.out.println("============");
+		System.out.println(" 메뉴 선택");
+		System.out.println("============ ");
 		
+		// 출력데이터가 없으면 줄바꿈기능만 적용하여 줄을 바꾼다.
 		System.out.println();
-		
 		
 		System.out.println("1)로그인(login)");
 		System.out.println("2)로그아웃(logout)");
@@ -61,12 +73,12 @@ public class PrintEx01 {
 		
 		System.out.println();
 		
-		
-		//System.out.print(데이터); 1) 데이터를 화면에 출력한다. 
+		//System.out.print(데이터); 1) 데이터를 화면에 출력한다.
 		System.out.print("상품 주문정보 [");
 		System.out.print("가격 : 10000원 / ");
-		System.out.print("할인률 : 10% /");
+		System.out.print("할인률 : 10% / ");
 		System.out.print("결제 금액 : 9000원 ]");
+		
 		
 	}
 

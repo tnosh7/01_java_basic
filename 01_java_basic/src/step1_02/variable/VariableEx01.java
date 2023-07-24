@@ -31,57 +31,49 @@ public class VariableEx01 {
 	public static void main(String[] args) {
 	
 		// 1. 정수 : Integer(int)		
-		int memberAge; // 변수의 선언
-		memberAge = 20 ; // 데이터 저장 
+		int memberAge;  // 변수의 선언
+		memberAge = 20; // 데이터 저장
 		System.out.println(memberAge);
 		
 		
 		// 2. 실수 : double
-		double memberWeight = 80.5; // 변수의 선언과 동시에 데이터 저장 
+		double memberWeight = 80.5; // 변수의 선언과 동시에 데이터 저장
 		System.out.println(memberWeight);
 		
-		
 		// 3. 문자 1개 : character(char)
-		char memberGenderEng = 'f';
-		char memberGenderKor = '여';
+		char memberGenderEng = 'm';
+		char memberGenderKor = '남';
 		
 		System.out.println(memberGenderEng);
 		System.out.println(memberGenderKor);
 		
 		
 		// 4. 문자열 : String
-		String subjectName = "백앤드 서버 프로그래밍"; 
+		String subjectName = "백앤드 서버 프로그래밍";
 		System.out.println(subjectName);
 		
 		
 		// 5. 참과 거짓 : boolean
-		boolean isMember = true; 
+		boolean isMember = true;
 		System.out.println(isMember);
 		
 		
 		// 변수의 특징 (고유성)
-		int productPrice = 18000; 
-		//int productPrice = 19000; //똑같은 이름의 변수를 생성할 수 없다. 
+		int productPrice = 18000;
+		//int productPrice = 19000; //똑같은 이름의 변수를 생성할 수 없다.
 		
-		productPrice = 19800; // 자료형을 생략했으므로 기존의 변수의 값을 수정한다. 
-		productPrice = 22000; 
+		productPrice = 19800; // 자료형을 생략했으므로 기존의 변수의 값을 수정한다.
+		productPrice = 22000;
 		
-		System.out.println(productPrice); // 가장 최근데이터 1개만 저장되어 있다. (1:1관계) 
+		System.out.println(productPrice); // 가장 최근데이터 1개만 저장되어 있다. (1:1관계)
 		
 		
 		// 변수의 초깃값
-		int deliveryPrice; 
-		//변수를 초기화하지 않으면 가비지 데이터가 변수에 저장되어 있다. 
+		int deliveryPrice;
+		// 변수를 초기화하지 않으면 가비지 데이터가 변수에 저장되어 있다.
 		//System.out.println(deliveryPrice);
 		
-		int tax = 0; // 0 데이터로 int타입 변수 초기화 
-		
-		
-		
-		
-		
-		
-		
+		int tax = 0; // 0 데이터로 int타입 변수 초기화
 		
 		
 	}

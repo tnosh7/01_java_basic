@@ -19,13 +19,12 @@ package step1_03.operator;
 public class OperatorEx02 {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println(10 + 3);
 		System.out.println(10 - 3);
 		System.out.println(10 * 3);
 		System.out.println(10 % 3);
 		System.out.println(10 / 3);
-		
 		
 		/*
 		 * 
@@ -41,7 +40,7 @@ public class OperatorEx02 {
 		 * 
 		 * */
 		System.out.println();
-		
+
 		System.out.println(10 / 3);
 		System.out.println(10.0 / 3);
 		System.out.println(10 / 3.0);
@@ -50,7 +49,6 @@ public class OperatorEx02 {
 		System.out.println((double)10 / 3);
 		System.out.println(10 / (double)3);
 		System.out.println((double)10 / (double)3);
-		
 		
 	}
 

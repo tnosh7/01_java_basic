@@ -47,32 +47,33 @@ public class IfEx17 {
 
 	public static void main(String[] args) {
 		
-		int finalScore = 61; 
+		int finalScore = 61;
 		
-//		if (finalScore >= 60 ) {
+//		if (finalScore >= 60) {
 //			System.out.println("합격");
 //		}
-//		
-//		if (finalScore <60 ) {
+//		if (finalScore < 60) {
 //			System.out.println("불합격");
 //		}
-	
-		if (finalScore >= 60 ) { // 조건식이 true 일때 실행 
+		
+		if (finalScore >= 60) { 		// 조건식이 true일때 실행
 			System.out.println("합격");
-		}
-		else { // if조건식이 false 일때 실행 
+		} 
+		else { 							// if 조건식이 false일때 실행
 			System.out.println("불합격");
 		}
 		
-		finalScore = 85; 
+		System.out.println();
 		
-		if (finalScore >= 90) {    // 조건식이 true일때 실행
+		finalScore = 85;
+		
+		if (finalScore >= 90) { 	 // 조건식이 true일때 실행
 			System.out.println("A");
 		}
-		else if (finalScore >= 80) { // 위 조건식이 false이며 해당 조건식이 true일때 실행 
+		else if (finalScore >= 80) { // 위 조건식이 false이며 해당 조건식이 true일때 실행
 			System.out.println("B");
 		}
-		else if (finalScore >= 70) { // 위 조건식이 false이며 해당 조건식이 true일때 실행 
+		else if (finalScore >= 70) { // 위 조건식이 false이며 해당 조건식이 true일때 실행
 			System.out.println("C");
 		}
 		

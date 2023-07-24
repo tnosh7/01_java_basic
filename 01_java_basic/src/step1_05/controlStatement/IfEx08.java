@@ -12,11 +12,11 @@ public class IfEx08 {
 
 	public static void main(String[] args) {
 		
-		
-		int grade = 100;
+		int grade = 99;
 		
 		if (grade >= 60) {
-			if (grade == 100) { //들여쓰기 중요 
+			
+			if (grade == 100) { // 들여쓰기 중요
 				System.out.println("만점");
 			}
 			System.out.println("합격");

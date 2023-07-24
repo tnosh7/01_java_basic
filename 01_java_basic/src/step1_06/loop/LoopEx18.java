@@ -21,21 +21,20 @@ package step1_06.loop;
 public class LoopEx18 {
 
 	public static void main(String[] args) {
-		
-		int num = 0 ; 
+
+		int num = 0;
 		
 		while (num > 0 && num < 4) {
 			System.out.println("반복문을 시작");
 			num++;
 		}
 		
-		System.out.println(" === do while === ");
+		System.out.println(" === do while ===");
 		
 		do {
 			System.out.println("반복문을 시작");
 			num++;
-		} while (num > 0 && num < 4); 
-		
+		} while (num > 0 && num < 4);
 		
 		
 	}

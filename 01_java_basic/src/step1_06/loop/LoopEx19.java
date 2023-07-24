@@ -27,38 +27,31 @@ package step1_06.loop;
 public class LoopEx19 {
 
 	public static void main(String[] args) {
-		
-		int x = 1;  // i j k l n m  // 초기식  
-		
-		while (x <= 5) { 			// 조건식 
-			System.out.println(x); 	// 명령어
+
+		int x = 1;					// 초기식
+		while (x <= 5) {			// 조건식
+			System.out.println(x);	// 명령어
 			x++;					// 증감식
 		}
 		
 		System.out.println();
-		
-		for (int i = 1; i <= 5 ; i++) { // (초기식 ; 조건식 ; 증감식)
-			System.out.println(i);		// 명령어
+		for (int i = 1; i <= 5; i++) { // (초기식; 조건식; 증감식)
+			System.out.println(i);	   // 명령어
 		}
-		System.out.println();
 		
+		System.out.println();
 		for (int i = 0; i < 10; i++) {
 			System.out.println(i);
 			if (i == 5) {
 				break;
 			}
-			
 		}
 		
 		
-		// for + [ctrl + spacebar] : for문생성 단축기 
+		// for + [ctrl + spacebar] : for문생성 단축키
 		for (int i = 0; i < 3; i++) {
 			
 		}
-		System.out.println();
-		
-		
-		
 		
 	}
 

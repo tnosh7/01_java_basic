@@ -32,33 +32,24 @@ package step1_05.controlStatement;
 public class IfEx24 {
 
 	public static void main(String[] args) {
-		
-		
-		int selectMenu = 1; // 1,2,3,4,5 
+
+		int selectMenu = 4; // 1,2,3,4,5
 		
 		switch (selectMenu) {
 		
-		case 1: 
+		case 1:
 			System.out.println("1번 메뉴로 분기합니다.");
 			break;
-		case 2: 
+		case 2:
 			System.out.println("2번 메뉴로 분기합니다.");
 			break;
-		case 3: 
+		case 3:
 			System.out.println("3번 메뉴로 분기합니다.");
 			break;
-		default: 
+		default:
 			System.out.println("default로 분기합니다.");
+		
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 

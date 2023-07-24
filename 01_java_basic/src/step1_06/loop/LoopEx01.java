@@ -24,33 +24,19 @@ package step1_06.loop;
 
 public class LoopEx01 {
 
-	
 	public static void main(String[] args) {
 		
 		System.out.println("반복문 시작");
 		
-		int i = 0; // 초기식
+		int i = 0;  // 초기식
 		
-		while (i < 10) { //조건식
+		while (i < 10) {  // 조건식
 			System.out.println("명령어");
-			i++;       // 증감식 i += 1 ; i = i + 1;
+			i++; 	// 증감식  i += 1; i = i + 1;
 		}
 		
 		System.out.println("반복문 종료");
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
-	
 	
 }

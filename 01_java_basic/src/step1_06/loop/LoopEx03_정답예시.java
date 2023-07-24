@@ -16,9 +16,9 @@ public class LoopEx03_정답예시 {
 			if (7 <= i || i < 3) {
 				System.out.print(i + " ");
 			}
-			i++;
 			
 		}
+		i++;
 		System.out.println();
 		
 		
