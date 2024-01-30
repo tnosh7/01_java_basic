@@ -32,7 +32,6 @@ public class InputEx01 {
 		System.out.println("총 결제금액은 " + (getProductPrice + (getProductPrice * 0.1)) +"원 입니다.");
 		System.out.println();
 		
-		
 		System.out.print("월급을 입력하세요 : ");
 		int getSalary = scan.nextInt();
 		

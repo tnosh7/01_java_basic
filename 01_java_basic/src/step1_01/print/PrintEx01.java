@@ -63,6 +63,7 @@ public class PrintEx01 {
 		System.out.println("============");
 		System.out.println(" 메뉴 선택");
 		System.out.println("============ ");
+	
 		
 		// 출력데이터가 없으면 줄바꿈기능만 적용하여 줄을 바꾼다.
 		System.out.println();

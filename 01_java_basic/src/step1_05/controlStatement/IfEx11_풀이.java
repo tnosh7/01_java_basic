@@ -1,5 +1,7 @@
 package step1_05.controlStatement;
 
+import java.util.Scanner;
+//23-01-30 13:30 ~ 13:36
 /*
  * # 영수증 출력[1단계]
  * 
@@ -18,13 +20,31 @@ public class IfEx11_풀이 {
 		int price1 = 8700;
 		int price2 = 6200;
 		int price3 = 1500;
-		
+		Scanner scan = new Scanner(System.in);
 		System.out.println("=== 롯데리아 ===");
 		System.out.println("1.불고기 버거 : " + price1 + "원");
 		System.out.println("2.새우    버거 : " + price2 + "원");
 		System.out.println("3.콜         라 : " + price3 + "원");
-		
-
+		System.out.print("주문 메뉴 입력 : ");
+		int order = scan.nextInt();
+		if(1<= order && order <= 3) {
+			System.out.print("현금 입력 : ");
+			int cash = scan.nextInt();
+			int charge = 0;
+			if (order == 1 ) {
+				if(cash >= price1) charge = cash - price1;
+			}
+			if (order == 2 ) {
+				charge = cash - price2;
+			}
+			if (order == 3 ) {
+				charge = cash - price3;
+			}
+			if (charge >= 0)System.out.println("잔돈 : " + charge +"원");
+			if (charge < 0) System.out.println("현금이 부족합니다.");
+		}
+		else System.out.println("메뉴를 다시 입력해주세요.");
 	}
+	
 
 }
