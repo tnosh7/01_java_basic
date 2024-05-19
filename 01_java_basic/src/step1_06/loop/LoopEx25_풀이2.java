@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
 * 24-05-19
-* while 최대값 구하기[2단계]
+* for 최대값 구하기[2단계]
 * @author 윤성희
 *
 */
@@ -16,21 +16,19 @@ import java.util.Scanner;
  * 
  */
 
-public class LoopEx14_풀이3 {
+public class LoopEx25_풀이2 {
 
 	public static void main(String[] args) {
+		
 		Scanner scan = new Scanner(System.in);
 		int max = 0;
-		int i = 0;
-		while (i < 3) {
-			System.out.print( "정수 입력 : ");
+		for (int i = 0; i < 3; i++) {
+			System.out.print("값 입력 : ");
 			int num = scan.nextInt();
-			
-			if (num > max) max = num;
-			i++;
+			if (max < num) max = num;
 		}
-		System.out.println("가장 큰 값 : " + max);
+		System.out.println("최대값 : " + max);
+		scan.close();
 	}
 
 }
-

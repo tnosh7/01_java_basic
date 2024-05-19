@@ -1,6 +1,6 @@
 package step1_06.loop;
 /**
-* 24-05-20
+* 24-05-19
 * while ATM[2단계]
 * @author 윤성희
 *
@@ -22,7 +22,7 @@ import java.util.Scanner;
  * 5. 이체
  * . 로그인 후 이용가능
  * 6. 조회
- * . 로그인 후 이용가능
+ * . 로그인 후 이 용가능
  * 7. 종료
  * 
  */
@@ -45,7 +45,6 @@ public class LoopEx10_풀이3 {
 		
 		boolean isRun = true;
 		while(isRun) {
-			
 			System.out.println("1.로그인");
 			System.out.println("2.로그아웃");
 			System.out.println("3.입금");
@@ -57,18 +56,75 @@ public class LoopEx10_풀이3 {
 			System.out.print("메뉴 선택 : ");
 			int sel = scan.nextInt();
 			
-			if (sel == 1) {}
-			else if (sel == 2) {}
-			else if (sel == 3) {}
-			else if (sel == 4) {}
-			else if (sel == 5) {}
-			else if (sel == 6) {}
+			if (sel == 1) {
+				if (identifier == -1) {
+					System.out.print("로그인 아이디 입력 : ");
+					int acc= scan.nextInt();
+					System.out.print("비밀번호 입력 : ");
+					int pw= scan.nextInt();
+					if (acc == dbAcc1 &&  pw == dbPw1) {
+						identifier = 1;
+					}
+					else if (acc == dbAcc2 && pw == dbPw2) {
+						identifier = 2;
+					}
+					else {
+						System.out.println("잘못 입력하셨습니다.");
+						continue;
+					}
+					System.out.println(acc + "님 환영합니다.");
+				}
+				else System.out.println("로그아웃 후에 이용 가능합니다.");
+			}
+			else if (sel == 2) {
+				if (identifier != -1) {
+					System.out.println("로그아웃 성공");
+					identifier = -1;
+				}
+			}
+			else if (sel == 3) {
+				if (identifier != -1) {
+					System.out.print("입금할 금액을 입력해주세요 : ");
+					if (identifier == 1) dbMoney1 += scan.nextInt();
+					else if (identifier == 2) dbMoney2 += scan.nextInt();
+				}
+				else System.out.println("로그인 후에 이용 가능합니다.");
+			}
+			else if (sel == 4) {
+				if (identifier != -1) {
+					System.out.print("출금할 금액을 입력해주세요 : ");
+					if (identifier == 1) dbMoney1 -= scan.nextInt();
+					else if (identifier == 2) dbMoney2 -= scan.nextInt();
+				}
+				else System.out.println("로그인 후에 이용 가능합니다.");
+			}
+			else if (sel == 5) {
+				if (identifier != -1) {
+					System.out.print("이체할 금액을 입력해주세요 : ");
+					int transMoney = scan.nextInt(); 
+					if (identifier == 1) {
+						dbMoney1 -= transMoney;
+						dbMoney2 += transMoney;
+					}
+					else if (identifier == 2) {
+						dbMoney2 -= transMoney;
+						dbMoney1 += transMoney;
+					}
+				}
+				else System.out.println("로그인 후에 이용 가능합니다.");
+			}
+			else if (sel == 6) {
+				if (identifier != -1) {
+					if (identifier == 1) System.out.println("계좌번호 : " + dbAcc1 + "\n계좌금액 : " + dbMoney1 + "원");
+					else if (identifier == 2) System.out.println("계좌번호 : " + dbAcc2 + "\n계좌금액 : " + dbMoney2 + "원");
+				}
+				else System.out.println("로그인 후에 이용 가능합니다.");
+			}
 			else if (sel == 0) {
 				isRun = false;
 				System.out.println("프로그램 종료");
 			}
 		}
-	
 		scan.close();
 		
 	}

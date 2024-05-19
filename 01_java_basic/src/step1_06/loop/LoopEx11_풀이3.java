@@ -1,5 +1,13 @@
 package step1_06.loop;
 
+import java.util.Scanner;
+
+/**
+* 24-05-19
+* while 베스킨라빈스31
+* @author 윤성희
+*
+*/
 
 
 /*
@@ -21,13 +29,36 @@ package step1_06.loop;
 public class LoopEx11_풀이3 {
 
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
 		
 		int p1 = 0;
 		int p2 = 0;
 		
 		int br = 0;
-		int turn = 0;
-
+		int turn = 1;
+		
+		System.out.println("====베스킨라빈스 31====");
+		while (true) {
+			
+			if (turn % 2 == 1) { 
+				System.out.print("p1 입력 : ");
+				p1 = scan.nextInt();
+				br += p1;
+				System.out.println(turn + "턴 : p1(" + p1 + ")\tbr(" + br + ")");
+			}
+			else if (turn % 2 == 0) {
+				System.out.print("p2 입력 : ");
+				p2 = scan.nextInt();
+				br += p2;
+				System.out.println(turn + "턴 : p2(" + p2 + ")\tbr(" + br + ")");
+			}
+			if (br >= 31) {
+				break;
+			}
+			turn++;
+		}
+		if (turn % 2 == 0) System.out.println("승리자는 p1");
+		else System.out.println("승리자는 p2");
 	}
 
 }

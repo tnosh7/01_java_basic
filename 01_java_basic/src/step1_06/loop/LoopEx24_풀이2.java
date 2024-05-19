@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
 * 24-05-19
-* while 랜덤학생
+* for 랜덤학생
 * @author 윤성희
 *
 */
@@ -21,33 +21,28 @@ import java.util.Random;
  * 
  */
 
-public class LoopEx15_풀이3 {
+public class LoopEx24_풀이2 {
 
 	public static void main(String[] args) {
 		Random ran = new Random();
-		int sum = 0;
-		int maxNum = 0;
+		int sum      = 0;
+		int maxNum   = 0;
 		int maxScore = 0;
-		int cnt = 0;
-		int i = 1;
-		while (i < 11) {
+		int cnt      = 0;
+		for (int i = 0; i < 10; i++) {
 			int score = ran.nextInt(100) + 1;
-			System.out.print(score + " ");
+			if (score >= 60) cnt++;
 			sum += score;
-
 			if (maxScore < score) {
-				maxNum   = i ;
+				maxNum = i;
 				maxScore = score;
 			}
-			if (score >= 60) cnt++;
-			
-			i++;
+			System.out.print(score + " ");
 		}
-		System.out.println("\n전교생 총점 : " + sum );
-		System.out.println("전교생 평균 : " + sum / 10.0);
-		System.out.println("합격자 수 :  " + cnt);
-		System.out.println("[1등 학생] 번호 : " + maxNum + " 성적 : " + maxScore);
 		
+		System.out.println("\n전교생(10명) 총점 : " + sum +"점, 평균 : " + sum / 10.0 + "점" );
+		System.out.println("합격자 수 : " + cnt + "명");
+		System.out.println("1등 학생 번호 : " + maxNum + "\t성적 : " + maxScore + "점");
 		
 	}
 

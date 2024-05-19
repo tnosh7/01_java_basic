@@ -1,13 +1,13 @@
 package step1_06.loop;
+
+import java.util.Scanner;
+
 /**
 * 24-05-19
-* while 소수찾기[1단계]
+* for 소수찾기[1단계] 
 * @author 윤성희
 *
 */
-import java.util.Scanner;
-
-
 /*
  * # 소수찾기[1단계]
  * 
@@ -23,23 +23,18 @@ import java.util.Scanner;
  * 
  */
 
-public class LoopEx13_풀이3 {
+public class LoopEx23_풀이2 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("정수 입력 : ");
+		System.out.print("숫자 입력 : ");
 		int num = scan.nextInt();
-		
 		int cnt = 0;
-		int i = 1;
-		while (i <= num) {
-			if (num % i == 0) {
-				cnt ++;
-			}
-			i++;
+		for (int i = 1; i <= num; i++) {
+			if (num % i == 0) cnt++;
 		}
-		if (cnt == 2) System.out.println("소수이다.");
-		else System.out.println("소수가 아니다.");
+		if (cnt == 2) System.out.println("소수입니다.");
+		else System.out.println("소수가 아닙니다.");
 	}
 
 }
