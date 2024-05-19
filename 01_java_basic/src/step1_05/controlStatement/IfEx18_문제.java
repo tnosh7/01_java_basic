@@ -1,5 +1,7 @@
 package step1_05.controlStatement;
 
+import java.util.Random;
+import java.util.Scanner;
 
 /*
  * # 가위바위보 게임
@@ -15,7 +17,7 @@ public class IfEx18_문제 {
 		
 		int com = 0;	// 랜덤으로 저장
 		int me = 0;		// 키보드로 입력받아 저장
-		
-	}
+	
+	}	
 
 }
